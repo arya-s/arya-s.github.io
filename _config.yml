@@ -1,0 +1,22 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Andrei
+tagline:          'Lost in Japan'
+description:      ''
+url:              http://arya-s.github.io
+
+author:
+  name:           'arya-s'
+  url:            http://arya-s.github.io
+
+paginate:         5
+
+pages_list:
+    About: '/about'
+    Archive: '/archive'
