@@ -30,6 +30,19 @@
 
 
   <body class="theme-base-0c">
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'aryadarc'; // required: replace example with your forum shortname
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function () {
+                                var s = document.createElement('script'); s.async = true;
+                                        s.type = 'text/javascript';
+                                                s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                                                        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                                                            }());
+                                                                </script>
+                                                                    
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
@@ -57,35 +70,20 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2014/05/03/google-code-sdk-zsh/">
-        Installing Google Cloud SDK under zsh
-      </a>
+      <a href="/2014/05/03/google-code-sdk-zsh/">Installing Google Cloud SDK under zsh</a>
     </h1>
 
     <span class="post-date">03 May 2014</span>
 
-    <p>Since web development isn&#39;t my strength, I decided to enroll in <a href="https://www.udacity.com/course/cs253">Udacity&#39;s Web Development</a> course today. The first assignment has us creating a simple Hello World application using <a href="https://console.developers.google.com/start/appengine">Google App Engine</a>. The page assists us in setting up our first project, which includes downloading <a href="https://developers.google.com/cloud/sdk/">Google Cloud SDK</a>.</p>
-
-<p>However, if you&#39;re running <a href="http://www.zsh.org/">zsh</a> as your shell, as I do, the provided instructions are not enough to get the SDK running, as they are for <a href="https://www.gnu.org/software/bash/">bash</a>. Google added scripts for zsh installation, but no option to select them during the installation progress (as far as I know). With a bit of tinkering, we can get the SDK installed properly, as well as enable tab completion. Here&#39;s how to do it:</p>
-
-<ol>
-<li><p>Download and install the SDK by running the following command in zsh (don&#39;t worry about <code>bash</code> in the command):</p>
-<div class="highlight"><pre><code class="bash language-bash" data-lang="bash">curl https://sdk.cloud.google.com <span class="p">|</span> bash
-</code></pre></div></li>
-<li><p>Follow the instructions and select an extraction directory. Remember the path to it for later.</p></li>
-<li><p>If you&#39;re doing the same Udacity course, choose <code>[2] Python and PHP</code> to install the app engine needed.</p></li>
-<li><p>After installing the packages, you are prompted for a path to your <code>.bash_profile</code>. Leave it blank.</p></li>
-<li><p>When asked to modify your <code>$PATH</code> choose not to.</p></li>
-<li><p>The same for bash completion.</p></li>
-<li><p>Open your <code>.zshrc</code> (located in your home directory) in your favourite editor and append the following two lines:</p>
-<div class="highlight"><pre><code class="bash language-bash" data-lang="bash"><span class="nb">source</span> /&lt;path to google-cloud-sdk&gt;/path.zsh.inc
-<span class="nb">source</span> /&lt;path to google-cloud-sdk&gt;/completion.zsh.inc
-</code></pre></div>
-<p>Where <code>&lt;path to google-cloud-sdk&gt;</code> is the path you previously extracted the SDK to. In my case it&#39;s <code>/Users/andrei/google-cloud-sdk</code></p></li>
-<li><p>Restart terminal and type <code>gcloud --version</code>. If all went well, you should see your SDK&#39;s version number in the first line printed out.</p></li>
-</ol>
-
-  </div>
+    <p>Since web development isn&#39;t my strength, I decided to enroll in <a href="https://www.udacity.com/course/cs253">Udacity&#39;s Web Development</a> course today. The first assignment has us creating a simple Hello World application using <a href="https://console.developers.google.com/start/appengine">Google App Engine</a>. The page assists us in setting up our first project, which includes ...
+    <br />
+    <span style="float: right">
+        <a href="/2014/05/03/google-code-sdk-zsh/">Read more</a>
+    </span>
+    <span style="float: left">
+        <a href="/2014/05/03/google-code-sdk-zsh/#disqus_thread">Comments</a>
+    </span>
+ </div>
   
 </div>
 
