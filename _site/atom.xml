@@ -4,7 +4,7 @@
  <title>Andrei</title>
  <link href="http://arya-s.github.io/atom.xml" rel="self"/>
  <link href="http://arya-s.github.io/"/>
- <updated>2014-05-03T20:45:56+09:00</updated>
+ <updated>2014-05-03T21:19:43+09:00</updated>
  <id>http://arya-s.github.io</id>
  <author>
    <name>arya-s</name>
@@ -17,34 +17,6 @@
    <link href="http://arya-s.github.io/2014/05/03/google-code-sdk-zsh/"/>
    <updated>2014-05-03T00:00:00+09:00</updated>
    <id>http://arya-s.github.io/2014/05/03/google-code-sdk-zsh</id>
-   <content type="html">&lt;p&gt;Since web development isn&amp;#39;t my strength, I decided to enroll in &lt;a href=&quot;https://www.udacity.com/course/cs253&quot;&gt;Udacity&amp;#39;s Web Development&lt;/a&gt; course today. The first assignment has us creating a simple Hello World application using &lt;a href=&quot;https://console.developers.google.com/start/appengine&quot;&gt;Google App Engine&lt;/a&gt;. The page assists us in setting up our first project, which includes downloading &lt;a href=&quot;https://developers.google.com/cloud/sdk/&quot;&gt;Google Cloud SDK&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;However, if you&amp;#39;re running &lt;a href=&quot;http://www.zsh.org/&quot;&gt;zsh&lt;/a&gt; as your shell, as I do, the provided instructions are not enough to get the SDK running, as they are for &lt;a href=&quot;https://www.gnu.org/software/bash/&quot;&gt;bash&lt;/a&gt;. Google added scripts for zsh installation, but no option to select them during the installation progress (as far as I know). With a bit of tinkering, we can get the SDK installed properly, as well as enable tab completion. Here&amp;#39;s how to do it:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Download and install the SDK by running the following command in zsh (don&amp;#39;t worry about &lt;code&gt;bash&lt;/code&gt; in the command):&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash language-bash&quot; data-lang=&quot;bash&quot;&gt;curl https://sdk.cloud.google.com &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; bash
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Follow the instructions and select an extraction directory. Remember the path to it for later.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;If you&amp;#39;re doing the same Udacity course, choose &lt;code&gt;[2] Python and PHP&lt;/code&gt; to install the app engine needed.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;After installing the packages, you are prompted for a path to your &lt;code&gt;.bash_profile&lt;/code&gt;. Leave it blank.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;When asked to modify your &lt;code&gt;$PATH&lt;/code&gt; choose not to.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;The same for bash completion.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Open your &lt;code&gt;.zshrc&lt;/code&gt; (located in your home directory) in your favourite editor and append the following two lines:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; /&amp;lt;path to google-cloud-sdk&amp;gt;/path.zsh.inc
-&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; /&amp;lt;path to google-cloud-sdk&amp;gt;/completion.zsh.inc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Where &lt;code&gt;&amp;lt;path to google-cloud-sdk&amp;gt;&lt;/code&gt; is the path you previously extracted the SDK to. In my case it&amp;#39;s &lt;code&gt;/Users/andrei/google-cloud-sdk&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Restart terminal and type &lt;code&gt;gcloud --version&lt;/code&gt;. If all went well, you should see your SDK&amp;#39;s version number in the first line printed out.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Installing Google Cloud SDK under zsh</title>
-   <link href="http://arya-s.github.io/2014/05/03/g/"/>
-   <updated>2014-05-03T00:00:00+09:00</updated>
-   <id>http://arya-s.github.io/2014/05/03/g</id>
    <content type="html">&lt;p&gt;Since web development isn&amp;#39;t my strength, I decided to enroll in &lt;a href=&quot;https://www.udacity.com/course/cs253&quot;&gt;Udacity&amp;#39;s Web Development&lt;/a&gt; course today. The first assignment has us creating a simple Hello World application using &lt;a href=&quot;https://console.developers.google.com/start/appengine&quot;&gt;Google App Engine&lt;/a&gt;. The page assists us in setting up our first project, which includes downloading &lt;a href=&quot;https://developers.google.com/cloud/sdk/&quot;&gt;Google Cloud SDK&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;However, if you&amp;#39;re running &lt;a href=&quot;http://www.zsh.org/&quot;&gt;zsh&lt;/a&gt; as your shell, as I do, the provided instructions are not enough to get the SDK running, as they are for &lt;a href=&quot;https://www.gnu.org/software/bash/&quot;&gt;bash&lt;/a&gt;. Google added scripts for zsh installation, but no option to select them during the installation progress (as far as I know). With a bit of tinkering, we can get the SDK installed properly, as well as enable tab completion. Here&amp;#39;s how to do it:&lt;/p&gt;
